@@ -1,0 +1,95 @@
+<PAMDataset>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="COMPRESSION">JPEG</MDI>
+    <MDI key="INTERLEAVE">PIXEL</MDI>
+    <MDI key="SOURCE_COLOR_SPACE">YCbCr</MDI>
+  </Metadata>
+  <Metadata>
+    <MDI key="EXIF_ApertureValue">(1.69599)</MDI>
+    <MDI key="EXIF_BrightnessValue">(6.77469)</MDI>
+    <MDI key="EXIF_ColorSpace">65535</MDI>
+    <MDI key="EXIF_DateTime">2023:10:06 07:56:04</MDI>
+    <MDI key="EXIF_DateTimeDigitized">2023:10:06 07:56:04</MDI>
+    <MDI key="EXIF_DateTimeOriginal">2023:10:06 07:56:04</MDI>
+    <MDI key="EXIF_ExposureBiasValue">(0)</MDI>
+    <MDI key="EXIF_ExposureMode">0</MDI>
+    <MDI key="EXIF_ExposureProgram">2</MDI>
+    <MDI key="EXIF_ExposureTime">(0.00531915)</MDI>
+    <MDI key="EXIF_Flash">16</MDI>
+    <MDI key="EXIF_FNumber">(1.8)</MDI>
+    <MDI key="EXIF_FocalLength">(3.99)</MDI>
+    <MDI key="EXIF_FocalLengthIn35mmFilm">28</MDI>
+    <MDI key="EXIF_GPSAltitude">(106.597)</MDI>
+    <MDI key="EXIF_GPSAltitudeRef">0x00</MDI>
+    <MDI key="EXIF_GPSImgDirection">(33.7487)</MDI>
+    <MDI key="EXIF_GPSImgDirectionRef">T</MDI>
+    <MDI key="EXIF_GPSLatitude">(7) (48) (7.68)</MDI>
+    <MDI key="EXIF_GPSLatitudeRef">S</MDI>
+    <MDI key="EXIF_GPSLongitude">(110) (22) (42)</MDI>
+    <MDI key="EXIF_GPSLongitudeRef">E</MDI>
+    <MDI key="EXIF_ISOSpeedRatings">20</MDI>
+    <MDI key="EXIF_LensMake">Apple</MDI>
+    <MDI key="EXIF_LensModel">iPhone 8 back camera 3.99mm f/1.8</MDI>
+    <MDI key="EXIF_LensSpecification">(3.99) (3.99) (1.8) (1.8)</MDI>
+    <MDI key="EXIF_Make">Apple</MDI>
+    <MDI key="EXIF_MakerNote">Apple iOS</MDI>
+    <MDI key="EXIF_MeteringMode">5</MDI>
+    <MDI key="EXIF_Model">iPhone 8</MDI>
+    <MDI key="EXIF_OffsetTime">+07:00</MDI>
+    <MDI key="EXIF_OffsetTimeDigitized">+07:00</MDI>
+    <MDI key="EXIF_OffsetTimeOriginal">+07:00</MDI>
+    <MDI key="EXIF_Orientation">6</MDI>
+    <MDI key="EXIF_PixelXDimension">4032</MDI>
+    <MDI key="EXIF_PixelYDimension">3024</MDI>
+    <MDI key="EXIF_ResolutionUnit">2</MDI>
+    <MDI key="EXIF_SceneType">0x01</MDI>
+    <MDI key="EXIF_SensingMethod">2</MDI>
+    <MDI key="EXIF_ShutterSpeedValue">(7.55544)</MDI>
+    <MDI key="EXIF_Software">16.5.1</MDI>
+    <MDI key="EXIF_SubjectArea">2015 1511 2217 1330</MDI>
+    <MDI key="EXIF_SubSecTime_Digitized">848</MDI>
+    <MDI key="EXIF_SubSecTime_Original">848</MDI>
+    <MDI key="EXIF_WhiteBalance">0</MDI>
+    <MDI key="EXIF_XResolution">(72)</MDI>
+    <MDI key="EXIF_YResolution">(72)</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">119.54805996473</MDI>
+      <MDI key="STATISTICS_MINIMUM">4</MDI>
+      <MDI key="STATISTICS_STDDEV">61.996615562476</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">115.83172188629</MDI>
+      <MDI key="STATISTICS_MINIMUM">6</MDI>
+      <MDI key="STATISTICS_STDDEV">62.084257399598</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JPEG</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">114.17087112623</MDI>
+      <MDI key="STATISTICS_MINIMUM">8</MDI>
+      <MDI key="STATISTICS_STDDEV">61.827120734851</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

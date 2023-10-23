@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+        integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+
+
+    <!-- ------------ -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/qgis2web.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+
+    <style>
+
+        body {
+              font-family: Poppins, sans-serif;
+              margin: 0;
+              padding: 0;
+          }
+          h1 {
+              text-align: center;
+              margin-top: 50px;
+              margin-bottom: 30px;
+              color: #b94949;
+          }
+          h3 {
+              text-align: justify;
+              margin-left: 50px;
+              margin-right: 50px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+          }
+          p {
+              text-align: justify;
+              margin-left: 50px;
+              margin-right: 50px;
+              margin-top: 20px;
+              margin-bottom: 20px;
+          }
+          table {
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              border-collapse: collapse;
+              border-spacing: 0;
+              width: 80%;
+              max-width: 800px;
+              box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          }
+          th{
+              padding: 15px;
+              text-align: center;
+              border-bottom: 1px solid #ddd;
+          }
+          td {
+              padding: 15px;
+              text-align: left;
+              border-bottom: 1px solid #ddd;
+          }
+          th {
+              background-color: #b94949;
+              color: white;
+          }
+          tr:hover {
+              background-color:#f5f5f5
+          }
+      </style>
+      <title>Informasi</title>
+
+</head>
+
+<body onload="loader()">
+    <header>
+        <a href="#" class="logo"><img src="image/Logo Horizontal Stack-Up1.png"></a>
+        <div class="uil uil-bars" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="../Home.html">Beranda</a></li>
+            <li><a href="#spbu">SPBU</a></li>
+            <li><a href="#pertashop">Pertashop</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="spbu" id="spbu">
+            <h1>SPBU</h1>
+            <p><b>SPBU atau Stasiun Pengisian Bahan Bakar Umum</b> adalah lembaga penyalur yang dibangun 
+                dan telah disetujui oleh Pertamina untuk digunakan dalam menyalurkan dan memasarkan BBM 
+                (Bahan Bakar Minyak) atau produk lain menggunakan merek dagang Pertamina. SPBU juga dapat 
+                digunakan untuk pengelolaan bisnis <i>NFR (Non Fuel Retail)</i>. 
+            </p>
+            <h3>Standar pembentukan sarana dan prasarana SPBU diantaranya <i>(Pertamina.com)</i>:</h3>
+            
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Standar Pembentukan Sarana dan Prasarana</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Pemadam kebakaran</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Lindungan lingkungan (Pengolahan limbah, oil catcher, well catcher, sumur pantau, drainase)</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Sistem keamanan</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Sistem pencahayaan</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Duiker</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Peralatan dan kelengkapan filling BBM</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Sensor api dan perangkat pemadam kebakaran</td>
+                </tr>    
+                <tr>    
+                    <td>8.</td>    
+                    <td>Generator</td>    
+                </tr>    
+                <tr>    
+                    <td>9.</td>    
+                    <td>Racun api</td>    
+                </tr>    
+                <tr>    
+                    <td>10.</td>    
+                    <td>Fasilitas umum (toiler, mushola, lahan parkir)</td>    
+                </tr>    
+                <tr>    
+                    <td>11.</td>    
+                    <td>Instalasi listrik dan air</td>    
+                </tr>    
+                <tr>    
+                    <td>12.</td>    
+                    <td>Rambu standar (dilarang merokok, dilarang menggunakan telepon seluler, menjaga kebersihan, tata cara penggunaan alat pemadam kebakaran, lambang Pertamina)</td>    
+                </tr>
+            
+            </table>
+            
+            <h3>Macam SPBU berdasarkan warnanya:</h3>
+            
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Macam SPBU berdasarkan Warna</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>SPBU Merah</td>
+                    <td>Menunjukkan bahwa SPBU tersebut merupakan SPBU Pasti Pas yang biasanya memiliki fasilitas dasar seperti isi angin, toilet, mushola, dan minimarket.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>SPBU Hijau</td>
+                    <td>Merupakan SPBU yang mendukung Green Energy Station (GES) seperti tenaga surya dan teknologi ramah lingkungan lainnya. Ciri lain yaitu jenis bahan bakar yang dijual tidak menyediakan premium dan solar.    
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>SPBU Biru</td>
+                    <td>Menunjukkan SPBU tersebut memiliki fasilitas yang lebih lengkap dibandingkan SPBU Merah (Pasti Pas) seperti adanya cuci kendaraan,  ATM, bengkel, tempat makan, dan penjualan produk permesinan.
+                    </td>
+                </tr>
+            </table>
+            
+            <h3>Macam SPBU berdasarkan pemiliknya:</h3>
+            
+            <table>
+                <tr>
+                    <th>No.</th>
+                    <th>Macam SPBU berdasarkan pemiliknya:</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>COCO (Corporate Owner Corporate Operate)
+                    </td>
+                    <td>Merupakan SPBU milik pemerintah yang sepenuhnya dimiliki serta dikelola oleh PT Pertamina. Ciri dari SPBU ini dapat dilihat pada angka kedua kode SPBU yang menunjukkan angka 1</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>DODO (Dealer Owner Dealer Operate)
+                    </td>
+                    <td>Merupakan SPBU yang dimiliki dan pengelolaannya di bawah perusahana swasta. Ditandai dengan kode dari angka keduanya adalah angka 4</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>CODO (Corporate Owner Dealer Operate)
+                    </td>
+                    <td>Merupakan SPBU yang kepemilikan dan tanggung jawabnya dipegang oleh PT Pertamina, sedangkan pengelolaannya dilakukan oleh perusahaan swasta. Ditandai dari angka keduanya adakah angka 3</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>SPBU Milik perusahaan asing</td>
+                    <td>SPBU yang dimiliki oleh perusahaan minyak asing seperti British Petroleum (BP-AKR), Vivo, Exxon Mobil, dan Shell
+                    </td>
+                </tr>
+            </table>
+            
+            <h3>Cara membaca kode SPBU</h3>
+            <p>SPBU memiliki kode penamaan yang berbeda-beda supaya unik. Kode tersebut diantaranya:</p>
+            <p>1. Angka Pertama menunjukkan regional tempat SPBU berada</p>
+            <p>2. Angka kedua menunjukkan kepemilikan SPBU</p>
+            <table>
+                <tr>
+                    <th>Angka Pertama</th>
+                    <th>Regional Tempat SPBU Berada</th>
+                </tr>
+                <tr>
+                    <td>Kode 1 dan 2</td>
+                    <td>Sumatera</td>
+                </tr>
+                <tr>
+                    <td>Kode 3, 4, dan 5</td>
+                    <td>Jawa</td>
+                </tr>
+                <tr>
+                    <td>Kode 6</td>
+                    <td>Kalimantan</td>
+                </tr>
+                <tr>
+                    <td>Kode 7</td>
+                    <td>Sulawesi</td>
+                </tr>
+                <tr>
+                    <td>Kode 8</td>
+                    <td>Papua</td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <th>Angka Kedua</th>
+                    <th>Kepemilikan SPBU</th>
+                </tr>
+                <tr>
+                    <td>Kode 1</td>
+                    <td>SPBU COCO</td>
+                </tr>
+                <tr>
+                    <td>Kode 3</td>
+                    <td>SPBU CODO</td>
+                </tr>
+                <tr>
+                    <td>Kode 4</td>
+                    <td>SPBU DODO</td>
+                </tr>
+            </table>
+        </div>
+        <div class="pertashop" id="pertashop">
+            <h1>Pertashop</h1>
+<p><b>Pertashop (Pertamina Shop)</b> adalah outlet penjualan Pertamina berskala kecil untuk melayani kebutuhan konsumen BBM non subsidi, 
+    LPG non subsidi, dan produk ritel Pertamina lainnya. Pertashop ini mengutamakan lokasi layanan di desa atau di kota yang 
+    membutuhkan pelayanan produk ritel Pertamina. Pertashop menyediakan produk BBM ramah lingkungan seperti <i>Pertamax Series</i> dengan 
+    harga sama dengan di SPBU Reguler. Outlet Pertashop menawarkan akses yang lebih mudah bagi masyarakat untuk memenuhi kebutuhan 
+    bahan bakar kendaraannya tanpa harus berkendara jauh ke SPBU.
+</p>
+        </div>
+
+</body>
+
+</html>
